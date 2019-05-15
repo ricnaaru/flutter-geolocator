@@ -258,7 +258,7 @@ class Geolocator {
   /// Returns the distance between the supplied coordinates in meters.
   Future<double> distanceBetween(double startLatitude, double startLongitude,
           double endLatitude, double endLongitude) =>
-      _methodChannel.invokeMethod<dynamic>('distanceBetween', <String, double>{
+      _methodChannel.invokeMethod('distanceBetween', <String, double>{
         'startLatitude': startLatitude,
         'startLongitude': startLongitude,
         'endLatitude': endLatitude,
